@@ -110,7 +110,7 @@ const MusicIconPlaying = styled.a`
 const AudioPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false)
 
-  const audioRef = useRef(new Audio('/media/destruction.mp3'))
+  const audioRef = useRef(new Audio('/media/desire.mp3'))
   // audioRef.current.autoplay = true OPTIONAL
   audioRef.current.loop = true
 
