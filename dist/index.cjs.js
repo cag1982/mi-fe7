@@ -2553,7 +2553,7 @@ var templateObject_1$B;
 
 var Icons$1 = IconModule;
 // const { MoonIcon, SunIcon, LanguageIcon } = Icons;
-var Container$4 = styled__default['default'].div(templateObject_1$C || (templateObject_1$C = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 4px;\n  background-color: #2b487d;\n"], ["\n  flex: none;\n  padding: 8px 4px;\n  background-color: #2b487d;\n"])));
+var Container$4 = styled__default['default'].div(templateObject_1$C || (templateObject_1$C = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 4px;\n  background-color: #D50000;\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"], ["\n  flex: none;\n  padding: 8px 4px;\n  background-color: #D50000;\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"])));
 var PriceBox = styled__default['default'].div(templateObject_2$c || (templateObject_2$c = __makeTemplateObject(["\n  padding: 8px 16px;\n"], ["\n  padding: 8px 16px;\n"])));
 var PriceLink = styled__default['default'].a(templateObject_3$7 || (templateObject_3$7 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
 // const SettingsEntry = styled.div`
@@ -2906,7 +2906,7 @@ var templateObject_1$G, templateObject_2$f;
 var Icons$2 = IconModule;
 var FeaturesIcon = Icons$2.FeaturesIcon;
 var Wrapper$1 = styled__default['default'].div(templateObject_1$H || (templateObject_1$H = __makeTemplateObject(["\n  position: relative;\n  width: 100%;\n"], ["\n  position: relative;\n  width: 100%;\n"])));
-var StyledNav = styled__default['default'].nav(templateObject_2$g || (templateObject_2$g = __makeTemplateObject(["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: rgba(33, 33, 33, 0.66);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.20);\n"], ["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: rgba(33, 33, 33, 0.66);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.20);\n"])), function (_a) {
+var StyledNav = styled__default['default'].nav(templateObject_2$g || (templateObject_2$g = __makeTemplateObject(["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: #272727;\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.20);\n"], ["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: #272727;\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.20);\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? 0 : "-" + MENU_HEIGHT + "px");
 }, MENU_HEIGHT);
@@ -3085,21 +3085,22 @@ var ResetCSS = styled.createGlobalStyle(templateObject_1$K || (templateObject_1$
 var templateObject_1$K;
 
 var baseColors = {
-    failure: "#9e3760",
-    primary: "#2b487d",
-    primaryBright: "#627D98",
-    primaryDark: "#334E68",
-    secondary: "#7fa94a",
-    success: "#7fa94a",
-    warning: "#A6391C",
+    failure: "#EF9A9A",
+    // failure: "#CF6679",
+    primary: "#D50000",
+    primaryBright: "#E53935",
+    primaryDark: "#B71C1C",
+    secondary: "#FFAB00",
+    success: "#80CBC4",
+    warning: "#FFB74D",
 };
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#b3e0e6", backgroundDisabled: "#aaa", contrast: "rgba(224, 224, 224, .12)", invertedContrast: "#FFFFFF", input: "rgba(224, 224, 224, .75)", tertiary: "rgba(224, 224, 224, .45)", text: "rgba(33, 33, 33, .87)", textDisabled: "rgba(33, 33, 33, .38)", textSubtle: "rgba(33, 33, 33, .60)", borderColor: "rgba(33, 33, 33, .12)", card: "rgba(224, 224, 224, .75)", modal: "#b3e0e6", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#121212", backgroundDisabled: "rgba(255, 255, 255, .38)", contrast: "rgba(224, 224, 224, .12)", invertedContrast: "#FFFFFF", input: "rgba(224, 224, 224, .12)", tertiary: "rgba(224, 224, 224, .08)", text: "rgba(255, 255, 255, .87)", textDisabled: "rgba(255, 255, 255, .38)", textSubtle: "rgba(255, 255, 255, .60)", borderColor: "rgba(224, 224, 224, .12)", card: "rgba(224, 224, 224, .09)", modal: "#323232", gradients: {
         bubblegum: "linear-gradient(139.73deg, #272727 0%, #353535 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#b3e0e6", backgroundDisabled: "#aaa", contrast: "rgba(224, 224, 224, .12)", invertedContrast: "#FFFFFF", input: "rgba(224, 224, 224, .12)", tertiary: "rgba(224, 224, 224, .08)", text: "rgba(255, 255, 255, .87)", textDisabled: "rgba(255, 255, 255, .38)", textSubtle: "rgba(255, 255, 255, .60)", borderColor: "rgba(224, 224, 224, .12)", card: "rgba(224, 224, 224, .75)", modal: "#b3e0e6", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#121212", backgroundDisabled: "rgba(255, 255, 255, .38)", contrast: "rgba(224, 224, 224, .12)", invertedContrast: "#FFFFFF", input: "rgba(224, 224, 224, .12)", tertiary: "rgba(224, 224, 224, .08)", text: "rgba(255, 255, 255, .87)", textDisabled: "rgba(255, 255, 255, .38)", textSubtle: "rgba(255, 255, 255, .60)", borderColor: "rgba(224, 224, 224, .12)", card: "rgba(224, 224, 224, .09)", modal: "#323232", gradients: {
         bubblegum: "linear-gradient(139.73deg, #272727 0%, #353535 100%)",
     } });
 
