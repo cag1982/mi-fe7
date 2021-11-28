@@ -12,8 +12,8 @@ export const light: ButtonTheme = {
     borderColorHover: "currentColor",
     boxShadow: "inset 0px -1px 0px rgba(14, 14, 44, 0.4)",
     boxShadowActive: "inset 0px -1px 0px rgba(14, 14, 44, 0.4)",
-    color: lightColors.invertedContrast,
-    colorHover: lightColors.invertedContrast,
+    color: lightColors.background,
+    colorHover: lightColors.background,
   },
   [SECONDARY]: {
     background: "transparent",

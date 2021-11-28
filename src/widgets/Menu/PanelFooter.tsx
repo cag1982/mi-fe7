@@ -21,7 +21,7 @@ const Icons = (IconModule as unknown) as { [key: string]: React.FC<SvgProps> };
 const Container = styled.div`
   flex: none;
   padding: 8px 4px;
-  background-color: #D50000;
+  background-color: #F3C802;
   border-top: solid 2px rgba(133, 133, 133, 0.1);
 `;
 
@@ -58,12 +58,12 @@ const SocialEntry = styled.div`
   padding: 0 16px;
 
   svg {
-    fill: rgba(255, 255, 255, .8);
+    fill: rgba(33, 33, 33, .8);
   }
 `;
 
 const MusicIcon = styled.a`
-  color: rgba(255, 255, 255, 1);
+  color: #D50000;
 `
 
 const anim = keyframes`
@@ -104,7 +104,7 @@ const MusicIconPlaying = styled.a`
   animation-duration: 5s;
   animation-timing-function: ease;
   animation-iteration-count: infinite;
-  color: rgba(255, 255, 255, .87);
+  color: #D50000;
 `
 
 const AudioPlayer = () => {
@@ -169,7 +169,7 @@ const PanelFooter: React.FC<Props> = ({
           {cakePriceUsd ? (
             <PriceLink href={priceLink} target="_blank">
               <PancakeRoundIcon width="24px" mr="8px" />
-              <Text color="#fff" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+              <Text color="#000" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
             </PriceLink>
           ) : (
             <Skeleton width={80} height={24} />

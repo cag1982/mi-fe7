@@ -2553,7 +2553,7 @@ var templateObject_1$B;
 
 var Icons$1 = IconModule;
 // const { MoonIcon, SunIcon, LanguageIcon } = Icons;
-var Container$4 = styled__default['default'].div(templateObject_1$C || (templateObject_1$C = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 4px;\n  background-color: #D50000;\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"], ["\n  flex: none;\n  padding: 8px 4px;\n  background-color: #D50000;\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"])));
+var Container$4 = styled__default['default'].div(templateObject_1$C || (templateObject_1$C = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 4px;\n  background-color: #F3C802;\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"], ["\n  flex: none;\n  padding: 8px 4px;\n  background-color: #F3C802;\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"])));
 var PriceBox = styled__default['default'].div(templateObject_2$c || (templateObject_2$c = __makeTemplateObject(["\n  padding: 8px 16px;\n"], ["\n  padding: 8px 16px;\n"])));
 var PriceLink = styled__default['default'].a(templateObject_3$7 || (templateObject_3$7 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
 // const SettingsEntry = styled.div`
@@ -2563,10 +2563,10 @@ var PriceLink = styled__default['default'].a(templateObject_3$7 || (templateObje
 //   height: ${MENU_ENTRY_HEIGHT}px;
 //   padding: 0 8px;
 // `;
-var SocialEntry = styled__default['default'].div(templateObject_4$2 || (templateObject_4$2 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n\n  svg {\n    fill: rgba(255, 255, 255, .8);\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n\n  svg {\n    fill: rgba(255, 255, 255, .8);\n  }\n"])), MENU_ENTRY_HEIGHT);
-var MusicIcon = styled__default['default'].a(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["\n  color: rgba(255, 255, 255, 1);\n"], ["\n  color: rgba(255, 255, 255, 1);\n"])));
+var SocialEntry = styled__default['default'].div(templateObject_4$2 || (templateObject_4$2 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n\n  svg {\n    fill: rgba(33, 33, 33, .8);\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n\n  svg {\n    fill: rgba(33, 33, 33, .8);\n  }\n"])), MENU_ENTRY_HEIGHT);
+var MusicIcon = styled__default['default'].a(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["\n  color: #D50000;\n"], ["\n  color: #D50000;\n"])));
 var anim = styled.keyframes(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n  0% {\n    transform:scale(1);\n  }\n  10% {\n    transform:scale(1.125);\n  }\n  20% {\n    transform:scale(1);\n  }\n  30% {\n    transform:scale(1.125);\n  }\n  40% {\n    transform:scale(1);\n  }\n  50% {\n    transform:scale(1.125);\n  }\n  60% {\n    transform:scale(1);\n  }\n  70% {\n    transform:scale(1.125);\n  }\n  80% {\n    transform:scale(1);\n  }\n  90% {\n    transform:scale(1.125);\n  }\n"], ["\n  0% {\n    transform:scale(1);\n  }\n  10% {\n    transform:scale(1.125);\n  }\n  20% {\n    transform:scale(1);\n  }\n  30% {\n    transform:scale(1.125);\n  }\n  40% {\n    transform:scale(1);\n  }\n  50% {\n    transform:scale(1.125);\n  }\n  60% {\n    transform:scale(1);\n  }\n  70% {\n    transform:scale(1.125);\n  }\n  80% {\n    transform:scale(1);\n  }\n  90% {\n    transform:scale(1.125);\n  }\n"])));
-var MusicIconPlaying = styled__default['default'].a(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  animation-name: ", ";\n  animation-duration: 5s;\n  animation-timing-function: ease;\n  animation-iteration-count: infinite;\n  color: rgba(255, 255, 255, .87);\n"], ["\n  animation-name: ", ";\n  animation-duration: 5s;\n  animation-timing-function: ease;\n  animation-iteration-count: infinite;\n  color: rgba(255, 255, 255, .87);\n"])), anim);
+var MusicIconPlaying = styled__default['default'].a(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  animation-name: ", ";\n  animation-duration: 5s;\n  animation-timing-function: ease;\n  animation-iteration-count: infinite;\n  color: #D50000;\n"], ["\n  animation-name: ", ";\n  animation-duration: 5s;\n  animation-timing-function: ease;\n  animation-iteration-count: infinite;\n  color: #D50000;\n"])), anim);
 var AudioPlayer = function () {
     var _a = React.useState(false), isPlaying = _a[0], setIsPlaying = _a[1];
     var audioRef = React.useRef(new Audio('/media/desire.mp3'));
@@ -2597,7 +2597,7 @@ var PanelFooter = function (_a) {
         React__default['default'].createElement(Flex, { alignItems: "center", justifyContent: "space-between" },
             React__default['default'].createElement(PriceBox, null, cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
                 React__default['default'].createElement(Icon$v, { width: "24px", mr: "8px" }),
-                React__default['default'].createElement(Text, { color: "#fff", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }))),
+                React__default['default'].createElement(Text, { color: "#000", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }))),
             React__default['default'].createElement(AudioPlayer, null)),
         React__default['default'].createElement(SocialEntry, null, socials.map(function (social, index) {
             var Icon = Icons$1[social.icon];
@@ -3086,10 +3086,9 @@ var templateObject_1$K;
 
 var baseColors = {
     failure: "#EF9A9A",
-    // failure: "#CF6679",
     primary: "#F3C802",
-    primaryBright: "#F3C802",
-    primaryDark: "#F3C802",
+    primaryBright: "#FEEB95",
+    primaryDark: "#FDE161",
     secondary: "#D50000",
     success: "#80CBC4",
     warning: "#FFB74D",
@@ -3097,7 +3096,7 @@ var baseColors = {
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#121212", backgroundDisabled: "rgba(255, 255, 255, .38)", contrast: "rgba(224, 224, 224, .12)", invertedContrast: "#FFFFFF", input: "rgba(224, 224, 224, .12)", tertiary: "rgba(224, 224, 224, .08)", text: "rgba(255, 255, 255, .87)", textDisabled: "rgba(255, 255, 255, .38)", textSubtle: "rgba(255, 255, 255, .60)", borderColor: "rgba(224, 224, 224, .12)", card: "rgba(0, 0, 0, 0.4)", modal: "#323232", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#121212", backgroundDisabled: "rgba(255, 255, 255, .38)", contrast: "rgba(224, 224, 224, .12)", invertedContrast: "#FFFFFF", input: "rgba(224, 224, 224, .12)", tertiary: "rgba(224, 224, 224, .08)", text: "rgba(255, 255, 255, .87)", textDisabled: "rgba(255, 255, 255, .38)", textSubtle: "rgba(255, 255, 255, .60)", borderColor: "rgba(224, 224, 224, .12)", card: "rgba(0, 0, 0, 0.5)", modal: "#323232", gradients: {
         bubblegum: "linear-gradient(139.73deg, #272727 0%, #353535 100%)",
     } });
 var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#121212", backgroundDisabled: "rgba(255, 255, 255, .38)", contrast: "rgba(224, 224, 224, .12)", invertedContrast: "#FFFFFF", input: "rgba(224, 224, 224, .12)", tertiary: "rgba(224, 224, 224, .08)", text: "rgba(255, 255, 255, .87)", textDisabled: "rgba(255, 255, 255, .38)", textSubtle: "rgba(255, 255, 255, .60)", borderColor: "rgba(224, 224, 224, .12)", card: "rgba(0, 0, 0, 0.4)", modal: "#323232", gradients: {
@@ -3122,8 +3121,8 @@ var light$1 = (_a$2 = {},
         borderColorHover: "currentColor",
         boxShadow: "inset 0px -1px 0px rgba(14, 14, 44, 0.4)",
         boxShadowActive: "inset 0px -1px 0px rgba(14, 14, 44, 0.4)",
-        color: lightColors.invertedContrast,
-        colorHover: lightColors.invertedContrast,
+        color: lightColors.background,
+        colorHover: lightColors.background,
     },
     _a$2[SECONDARY] = {
         background: "transparent",
