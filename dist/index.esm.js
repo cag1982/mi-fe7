@@ -2933,12 +2933,11 @@ styled.span(templateObject_6$1 || (templateObject_6$1 = __makeTemplateObject(["\
 //   }
 // `
 var Menu = function (_a) {
-    var _b;
     var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, rugDocLink = _a.rugDocLink, rugDocText = _a.rugDocText, auditSCLink = _a.auditSCLink, auditSCText = _a.auditSCText, defiYieldLink = _a.defiYieldLink, paladinLink = _a.paladinLink, paladinText = _a.paladinText, auditLink = _a.auditLink, auditText = _a.auditText, children = _a.children;
     var isXl = useMatchBreakpoints().isXl;
     var isMobile = isXl === false;
-    var _c = useState(!isMobile), isPushed = _c[0], setIsPushed = _c[1];
-    var _d = useState(true), showMenu = _d[0], setShowMenu = _d[1];
+    var _b = useState(!isMobile), isPushed = _b[0], setIsPushed = _b[1];
+    var _c = useState(true), showMenu = _c[0], setShowMenu = _c[1];
     var refPrevOffset = useRef(window.pageYOffset);
     useEffect(function () {
         var handleScroll = function () {
@@ -2969,10 +2968,10 @@ var Menu = function (_a) {
         };
     }, []);
     // Find the home link if provided
-    var homeLink = links.find(function (link) { return link.label === "Home"; });
+    // const homeLink = links.find((link) => link.label === "Home");
     return (React.createElement(Wrapper$1, null,
         React.createElement(StyledNav, { showMenu: showMenu },
-            React.createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
+            React.createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: "/" }),
             React.createElement(Flex, { alignItems: "center" },
                 auditLink ? (React.createElement("a", { href: auditLink, style: { marginRight: '6px' } },
                     React.createElement(Tag, { startIcon: React.createElement(FeaturesIcon, null), variant: "secondary", outline: true }, auditText))) : null,
